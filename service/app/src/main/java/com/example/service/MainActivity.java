@@ -2,6 +2,7 @@ package com.example.service;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -15,8 +16,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void stoptheservice(View view) {
+        Intent i = new Intent(this,MyService1.class);
+        startService(i);
     }
 
     public void starttheservice(View view) {
+        Intent i = new Intent(this,MyService1.class);
+        stopService(i);
+
     }
 }
