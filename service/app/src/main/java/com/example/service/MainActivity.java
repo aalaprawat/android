@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void stoptheservice(View view) {
         Intent i = new Intent(this,MyService1.class);
-        startService(i);
+        stopService(i);
     }
 
     public void starttheservice(View view) {
         Intent i = new Intent(this,MyService1.class);
-        stopService(i);
+        startService(i);
 
     }
 }
